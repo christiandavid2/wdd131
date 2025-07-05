@@ -1,0 +1,149 @@
+
+header {
+  background-color: #1f4e79;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+nav {
+  background-color: #333;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  display: flex;
+  gap: 1rem;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+.highlight {
+  color: #fbd85d; /* Yellowish text highlight */
+}
+
+/* Navigation Bar
+
+
+/* Main Cards */
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  margin: 1.5rem ;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* About Me and Location Content */
+.about{
+  max-width: 800px;
+  margin: auto;
+  font-family: arial, sans-serif;
+  background-color: #ccc;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.about h2 {
+    background-color: #2a5d9f;
+    color: #ccc;
+    text-align: center;
+    padding: 10px;
+    margin-top: 0;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+.intro p {
+  flex: 1;
+}
+
+.profile-pic {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.location {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.flag {
+  width: 100px;
+  height: auto;
+}
+
+.caption {
+  font-size: 0.9em;
+  font-style: italic;
+  margin-left: 5px;
+}
+
+
+/* Web Dev Resources */
+aside.cards {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 1px;
+  background-color: #ffffff;
+  max-width: auto;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+aside.cards h2 {
+  background-color: #1f4e79;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  margin-top: 0;
+}
+aside.cards ul {
+  list-style-type: disc;
+  padding: 0;
+  margin: 0.5rem;
+  padding-left: 20px;
+}
+aside.cards ul li {
+  margin-bottom: 0.5rem;
+}
+
+aside.cards ul li a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+aside.cards ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #1f4e79;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0.3rem 0;
+}

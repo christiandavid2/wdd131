@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Christian Emmanuel | Learn the basics of dynamic web development including HTML, CSS, JavaScript, and responsive design principles.">
+  <meta name="author" content="Christian">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> WDD 131-Dynamic Web Fundamentals-Christian David</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> <!-- Google Font Montserrat -->
+  <script src="scripts/courses.js" defer></script> 
+  <link rel="stylesheet" href="styles/base.css"> 
+</head>
+<body>
+
+  <header>
+    <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+    <nav>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/Christian-david-62576a31a" target="_blank">LinkedIn</a></li>
+        <li><a href="https://www.linkedin.com/in/Christian-david-62576a31a" target="_blank">Canvas</a></li>
+        <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/17?lang=eng" target="_blank">Alma 17</a></li>
+        <li><a href="final-project.html" target="_blank">Final Project</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="about">
+      <h2>About Me</h2>
+          <div class="intro">
+              <p>My name is Christian Emmanuel David, a dedicated Computer Science student at Brigham Young University-Idaho (BYU-Idaho). I am deeply passionate about web development and programming, with a strong interest in creating responsive, user-friendly websites and applications. Over time, I have gained hands-on experience working with technologies like HTML, CSS, and JavaScript, and I enjoy using these tools to build dynamic web projects. I love problem-solving, learning new technologies, and collaborating with others to bring ideas to life. In addition to coding, I enjoy teaching, sharing knowledge, and helping others grow in the tech space. My goal is to become a skilled full-stack developer and use my skills to build impactful digital solutions</p>
+              <img src="image/profile.jpg" alt="Christian Emmanuel David" />
+          </div>
+          <h3>Abuja Nigeria</h3>
+          <div class="location">
+             <img src="image/nigeria-flag.webp" alt="Nigeria" class="flag" />
+              <p>Nigeria is located in West Africa and is known for its rich culture, languages, and innovation. Lagos, one of its largest cities, is a hub for tech and creativity. It is also known for its energy, people, and opportunities. Nigeria has beautiful landscapes and a fast-growing digital economy.</p>
+          </div>
+          <div class="caption">Official Flag Of Nigeria</div>
+    </section>
+    <aside class="cards">
+      <h2>Web Dev Resources</h2>
+      <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN Web Docs - JavaScript</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+        <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a></li>
+        <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
+        <li><a href="https://www.codecademy.com/" target="_blank">Codecademy</a></li>
+        <li><a href="https://www.udemy.com/" target="_blank">udemy</a></li>
+      </ul>
+    </aside>
+  </main>
+  <footer>
+    <p>&copy; <span id="current-year"></span> 🌳 Christian Emmanuel David 🌳 Abuja, Nigeria</p>
+    <p id="lastModified"></p>
+    <p>Last Updated: <span id="last-updated"></span></p>
+  </footer>
+    <script>
+      // Set the current year in the footer
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    <script>
+  document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+</script>
+      </script>
+</body>
+</html>
+
