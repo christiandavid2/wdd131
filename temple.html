@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Album</title>
+  <link rel="stylesheet" href="styles/temple.css">
+  <link rel="stylesheet" href="styles/temple-larga.css">
+  <script src="scripts/temple.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <button id="menu" aria-label="Menu">&#9776;</button>
+    <nav id="navigation" class="hide">
+      <a href="#">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>My Favorite Temples</h1>
+    <div class="album">
+      <figure>
+        <img src="image/boise_idaho_temple_lds.jpeg" alt="Boise Idaho Temple">
+        <figcaption>Boise Idaho Temple</figcaption>
+      </figure>
+        <figure>
+            <img src="image/rendering_arequipa_peru_temple.jpeg" alt="Arequipa Peru Temple">
+            <figcaption>Arequipa Peru Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="image/birmingham_alabama_temple_lds.jpeg" alt="Birmingham Alabama Temple">
+            <figcaption>Birmingham Alabama Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="image/baton_rouge_temple_lds.jpeg" alt="Baton Rouge Temple">
+            <figcaption>Baton Rouge Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="image/bangkok_thailand_temple_exteriors.png" alt="Bangkok Thailand Temple">
+            <figcaption>Bangkok Thailand Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="image/apia_samoa_temple_lds.jpeg" alt="Apia Samoa Temple">
+            <figcaption>Apia Samoa Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="image/albuquerque_temple_lds.jpeg" alt="Albuquerque Temple">
+            <figcaption>Albuquerque Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="image/rendering_abidjan_ivory_coast_temple.jpeg" alt="Abidjan Ivory Coast Temple">
+            <figcaption>Abidjan Ivory Coast Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="image/aba_nigeria_temple_lds.jpeg" alt="Aba Nigeria Temple">
+            <figcaption>Aba Nigeria Temple</figcaption>
+        </figure>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Christian Emmanuel | Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
+<script>
+  // Set the current year in the footer
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Display the last modified date
+  document.getElementById('lastModified').textContent = `Last modified: ${document.lastModified}`;
+</script>

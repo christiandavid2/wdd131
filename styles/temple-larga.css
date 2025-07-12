@@ -1,0 +1,22 @@
+@media screen and (min-width: 768px) {
+  #menu {
+    display: none;
+  }
+
+  #navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .album {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    max-width: 1200px;
+    margin: 10px auto;
+  }
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
