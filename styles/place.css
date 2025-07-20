@@ -1,0 +1,132 @@
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+/* ========== Base Styles (Mobile First) ========== */
+:root {
+  --main-color: #83b300;
+  --accent-color: #f0f0f0;
+  --text-color: #333;
+  --card-bg: white;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--accent-color);
+  color: var(--text-color);
+}
+
+header, footer {
+  background-color: var(--main-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+h1, h2 {
+  margin: 0.5rem 0;
+}
+
+/* Hero Image */
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+
+/* Cards */
+.cardx {
+  display:contents;
+  align-self: center;
+  text-align: center;
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  justify-content: center;
+}
+
+/* Typography inside cards */
+.carddata ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cardata li {
+  margin-bottom: 0.5rem;
+}
+.cardweather p {
+  margin: 0.3rem 0;
+}
+
+/* Footer Small Text */
+footer small {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+}
+@media (min-width: 1000px) {
+  body {
+    font-size: 1.1rem;
+  }
+
+  .hero {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: block;
+  }
+
+  .hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .card {
+    position: absolute;
+    background-color: var(--card-bg);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    backdrop-filter: blur(5px);
+  }
+
+  /* 📋 Data card */
+  .card.data {
+    top: 10%;
+    left: 5%;
+    max-width: 250px;
+  }
+
+  /* 🌤️ Weather card */
+  .card.weather {
+    bottom: 10%;
+    right: 5%;
+    max-width: 220px;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+  }
+}
+

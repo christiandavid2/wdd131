@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Explore the beauty of Abuja, Nigeria with its rich culture and vibrant atmosphere." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Christian David" />
+  <title>Abuja Nigeria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="styles/place.css" />
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Abuja Nigeria</h1>
+  </header>
+<picture class="hero">
+  <source srcset="image/abuja-large.webp" media="(min-width: 1000px)">
+  <source srcset="image/abuja-small.webp" media="(min-width: 600px)">
+  <img src="image/abuja-small.webp" alt="Beautiful view of Abuja city with Aso Rock" />
+  <section class="card data">
+    <h2>Data</h2>
+    <ul>
+      <li><strong>Area:</strong> 923,769 km²</li>
+      <li><strong>Population:</strong> 223 million</li>
+      <li><strong>Capital:</strong> Abuja</li>
+      <li><strong>Languages:</strong> English, Hausa, Yoruba, Igbo</li>
+      <li><strong>Time Zone:</strong> UTC+1</li>
+      <li><strong>Calling Code:</strong> +234</li>
+      <li><strong>Currency:</strong> Naira (₦)</li>
+    </ul>
+  </section>
+  <section class="card weather">
+    <h2>Weather <span class="icon">⛅</span></h2>
+    <p>Temperature: <span id="temp">30</span> °C</p>
+    <p>Conditions: Mostly Sunny</p>
+    <p>Wind: <span id="wind">10</span> km/h</p>
+    <p>Wind Chill: <span id="windchill">...</span></p>
+  </section>
+</picture>
+  <footer>
+    <p>&copy; <span id="year"></span> Christian David | Abuja, Nigeria</p>
+    <p>Last Updated: <span id="last-updated"></span></p>
+    <p>Weather data provided by <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open Meteo</a></p>
+    <p>Weather icons by <a href="https://www.flaticon.com/free-icons/weather" target="_blank" rel="noopener">Flaticon</a></p>
+  </footer>
+</body>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('last-updated').textContent = document.lastModified;
+</script>
+</html>
