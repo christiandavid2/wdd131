@@ -50,31 +50,45 @@ h1, h2 {
   display: block;
   object-fit: cover;
 }
-
-
-/* Cards */
-.cardx {
-  display:contents;
-  align-self: center;
-  text-align: center;
+/* Card Styles */
+.card {
   background-color: var(--card-bg);
-  border-radius: 8px;
-  justify-content: center;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  margin: 1rem;
+}
+/* 📋 Data Card */
+.card.data {
+  background-color: #e0f7fa;
+}
+.card.data h2 {
+  color: #00796b;
+  border-radius: 10px;
+  padding: 0.5rem;
+  background-color: #b2ebf2;
+  right: 20px;
+  position: relative;
+  top: -10px;
 }
 
-/* Typography inside cards */
-.carddata ul {
-  list-style: none;
-  padding: 0;
+/* 🌤️ Weather Card */
+.card.weather {
+  background-color: #ffe0b2;
 }
-
-.cardata li {
-  margin-bottom: 0.5rem;
+.card.weather h2 {
+  color: #e65100;
+  border-radius: 10px;
+  padding: 0.5rem;
+  background-color: #ffcc80;
+  right: 20px;
+  position: relative;
+  top: -10px;
 }
-.cardweather p {
-  margin: 0.3rem 0;
+/* Main Content */
+main {
+  padding: 2rem;
 }
-
 /* Footer Small Text */
 footer small {
   display: block;
