@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const lastModified = document.lastModified;
 
   document.getElementById("year").textContent = year;
-  document.getElementById("lastModified").textContent = lastModified;
+  document.getElementById("last-updated").textContent = document.lastModified;
 
   // Static weather data (you'll replace with real-time data in the next phase)
   const temp = parseFloat(document.getElementById("temp").textContent);
