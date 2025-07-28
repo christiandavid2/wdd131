@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filtered Temple Album</title>
+  <link rel="stylesheet" href="filtered-temples.css">
+  <script src="filtered-temples.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="description" content="A collection of my favorite temples with images and descriptions.">
+    <meta name="keywords" content="temple, album, LDS, religious, architecture">
+    <meta name="author" content="Christian Emmanuel">
+    <meta name="theme-color" content="#003366">
+    <link rel="canonical" href="https://example.com/temple-album">
+</head>
+<body>
+  <header>
+    <h1>Temples Album </h1>
+    <button id="menu-button" aria-label="toggle navigation">&#9776;</button>
+    <navigation id="navigation" class="hide">
+      <button class="filter-btn" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="old">Old</button>
+      <button class="filter-btn" data-filter="new">New</button>
+      <button class="filter-btn" data-filter="large">Large</button>
+      <button class="filter-btn" data-filter="small">Small</button>
+    </nav>
+  </header>
+
+  <main id="templeCards"></main>
+
+  <footer>
+    <p>&copy; 2023 Christian Emmanuel</p>
+    <p>Last updated: <span id="lastUpdated"></span></p>
+    <p>Contact: <a href="mailto:christian.emmanuel@example.com">https://www.linkedin.com/in/christian-david-62576a31a/</a></p>
+  </footer>
+
+  
+</body>
+</html>

@@ -1,13 +1,6 @@
+/* Mobile First */
 body {
-  font-family: 'Roboto', sans-serif;
-  font-optical-sizing: auto;
-  margin: 0;
-  padding: 0;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-
+  font-family: Arial, sans-serif;
 }
 
 header {
@@ -20,57 +13,68 @@ header {
 }
 
 #menu {
-  font-size: 1.5rem;
+  font-size: 2rem;
   background: none;
   border: none;
   color: white;
   cursor: pointer;
 }
-main h1 {
-    text-align: center;
-}
 
-#navigation {
-  display:none;
+#men {
+  display: none; /* Hide menu by default */
   flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  top: 60px; /* Position it below the header */
+  left: 0;
+  right: 0;
   background-color: #003366;
+  padding: 1rem;
 }
 
 #navigation a {
   text-decoration: none;
   color: white;
-  margin: 0.5rem;
-  font-weight: bold;
-
+  padding: 0.5rem;
+  display: block;
 }
 
 #navigation a:hover {
-  background-color: #003366;
+  background-color: #005599;
 }
-.opne {
+
+/* Media Query for larger screens */
+@media screen and (min-width: 768px) {
+  #hamburger {
+    display: none; /* Hide hamburger on larger screens */
+  }
+
+  #navigation {
     display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    position: static;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  #navigation a {
+    padding: 0.5rem;
+    text-decoration: none;
+    color: white;
+  }
+
+  #navigation a:hover {
+    background-color: transparent;
+    color: #005599;
+  }
 }
 
-.album {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  padding: 1rem;
+/* Hidden menu when it is not active */
+.hidden {
+  display: none;
 }
 
-figure {
-  margin: 0;
-  text-align: center;
-}
-
-footer {
-  text-align: center;
-  background: #003366;
-  color: white;
-  padding: 1rem;
-}
-footer a {
-  color: white;
-  text-decoration: none;
-	color: #000;
+#hamburger.active + #navigation {
+  display: flex; /* Show menu when hamburger is active */
 }

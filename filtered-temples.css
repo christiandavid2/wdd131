@@ -1,0 +1,138 @@
+
+/* Base styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-optical-sizing: auto;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100
+}
+header {
+  background-color: #2e3b4e;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Header and title */
+h1 {
+  background-color: #2e3b4e;
+  color: white;
+  padding: 1rem;
+  margin: 0;
+}
+
+
+/* Hamburger button (mobile only) */
+#menu-button {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+
+/* Navigation section (buttons) */
+#navigation {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2e3b4e;
+  padding: 1rem;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+   
+}
+
+#navigation button {
+  margin: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Button hover effect */
+#navigation button {
+  transition: background-color 0.3s, color 0.3s;
+}
+#navigation button:hover {
+  background-color: #f1c40f;
+  color: black;
+}
+
+#navigation button:hover {
+  background-color: #f1c40f;
+  color: black;
+}
+/* Hide navigation by default */
+#navigation.hidden {    
+  display: none;
+}
+/* Show navigation when menu button is clicked */
+.open #navigation {
+  display: flex;
+  justify-content: center;
+
+}
+
+/* When menu button is clicked, sho
+/* Main content area */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+.temple-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 300px;
+  padding: 1rem;
+  background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    border: #2e3b4e 2px solid;
+    box-shadow: inset 0 0 10px rgba(46, 59, 78, 0.2);
+
+}
+.temple-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+footer {
+  background-color: #2e3b4e;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+}
+
+/* Larger screens (Desktop) */
+@media (min-width: 768px) {
+  #menu-button {
+    display: none;
+  }
+
+  #navigation {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: transparent;
+  }
+  #navigation button {
+    margin: 0;
+  }
+}
