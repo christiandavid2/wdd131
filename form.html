@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="A form to submit product reviews for various futuristic products.">
+    <meta name="keywords" content="product review, form, futuristic products, user feedback">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>Product Review Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+    }
+
+    header, footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        position: relative;
+        width: 62%;
+        margin: auto;
+        border-radius: 0 0 8px 8px;
+    }
+
+    main {
+        max-width: 800px;
+        margin: auto;
+        padding: 1rem;
+    }
+
+    form {
+        background-color: #abcc4f;
+        padding: 1.5rem;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        display: grid;
+        gap: 1.2rem;
+    }
+
+    label, legend {
+        font-weight: bold;
+        margin-bottom: 0.25rem;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 0.5rem;
+        margin-top: 0.25rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1rem;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    fieldset {
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        padding: 1rem;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+        margin-right: 0.5rem;
+    }
+
+    input[type="submit"] {
+        background-color: #2563eb;
+        color: white;
+        padding: 0.75rem;
+        border: none;
+        border-radius: 6px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #1d4ed8;
+    }
+
+    /* Responsive layout */
+    @media screen and (min-width: 600px) {
+    form {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    form > label,
+    form > fieldset,
+    form > textarea,
+    form > input[type="submit"] {
+        grid-column: span 2;
+    }
+    }
+
+    
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Product Review Form</h1>
+  </header>
+  <main>
+    <form method="get" action="review.html">
+      <label for="product">Product Name:</label>
+      <select id="product" name="product" required>
+        <option value="" disabled selected>Select a Product ...</option>
+      </select>
+
+      <fieldset>
+        <legend>Overall Rating</legend>
+        <label><input type="radio" name="rating" id="rate1" value="1" required />&#9733;</label>
+        <label><input type="radio" name="rating" id="rate2" value="2" />&#9733;&#9733;</label>
+        <label><input type="radio" name="rating" id="rate3" value="3" />&#9733;&#9733;&#9733;</label>
+        <label><input type="radio" name="rating" id="rate4" value="4" />&#9733;&#9733;&#9733;&#9733;</label>
+        <label><input type="radio" name="rating" id="rate5" value="5" />&#9733;&#9733;&#9733;&#9733;&#9733;</label>
+      </fieldset>
+
+      <label for="install-date">Date of Installation:</label>
+      <input type="date" id="install-date" name="install-date" required />
+
+      <fieldset>
+        <legend>Useful Features (check all that apply)</legend>
+        <label><input type="checkbox" id="feature1" name="features" value="Easy Setup" />Easy Setup</label>
+        <label><input type="checkbox" id="feature2" name="features" value="Affordable" />Affordable</label>
+        <label><input type="checkbox" id="feature3" name="features" value="Durable" />Durable</label>
+        <label><input type="checkbox" id="feature4" name="features" value="Energy Efficient" />Energy Efficient</label>
+      </fieldset>
+
+      <label for="review">Written Review:</label>
+      <textarea id="review" name="review" rows="4" cols="50"></textarea>
+
+      <label for="username">Your Name:</label>
+      <input type="text" id="username" name="username" />
+
+      <input type="submit" value="Submit Review" />
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Christian Emmanuel | Abuja, Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
+  <script src="scripts/form.js"></script>
+</body>
+
+</html>
