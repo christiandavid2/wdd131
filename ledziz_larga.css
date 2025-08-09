@@ -1,0 +1,140 @@
+@media (min-width: 1000px) {
+  body {
+    font-size: 1.1rem;
+  }
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+ }
+  .nav-links {
+    display: flex; /* Show links by default on larger screens */
+  }
+  #menu {
+    display: none; /* Hide menu toggle button on larger screens */
+  }
+  .nav-right {
+    display: flex; /* Show right section on larger screens */
+  }
+  .currency {
+    display: flex; /* Show currency on larger screens */
+  }
+  .search-bar {
+    display: flex; /* Show search bar on larger screens */
+  }
+  .hero {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: block;
+  }
+  .hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  .products {
+    position: relative; /* Change to relative for larger screens */
+    top: 0; /* Reset position */
+    left: 0; /* Reset position */
+    transform: none; /* Reset transform */
+    width: 100%; /* Full width on larger screens */
+  }
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Adjust grid for larger screens */
+  }
+  .product-card {
+    width: 220px; /* Set a fixed width for product cards */
+  }
+  .footer {
+    padding: 60px 30px; /* Increase padding for larger screens */
+  }
+  .footer-container {
+    flex-wrap: wrap; /* Allow wrapping on larger screens */
+  }
+  .footer-section {
+    flex: 1;
+    min-width: 250px; /* Adjust minimum width for larger screens */
+    margin: 20px;
+  }
+  .footer-section h3 {
+    font-size: 18px; /* Increase font size for section titles */
+  }
+  .footer-section ul li a {
+    font-size: 16px; /* Increase font size for links */
+  }
+  .footer-section p {
+    font-size: 15px; /* Increase font size for paragraphs */
+  }
+  .footer-icons a {
+    font-size: 20px; /* Increase icon size */
+  }
+  .footer-payment img {
+    height: 32px; /* Increase payment icon size */
+  }
+  .footer-copy {
+    font-size: 14px; /* Increase copyright text size */
+  }
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 10; /* Make sure text is above the images */
+  } /* Increase paragraph font size for larger screens */
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    max-height: 600px; /* Adjust as needed */
+  }
+  .hero h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .carousel {
+    display: flex;
+    width: 300%; /* This allows for 3 images to show */
+    animation: slide 15s infinite ease-in-out;
+  }
+
+  .carousel img {
+    width: 33.33%; /* Each image takes up one-third of the carousel */
+    height: auto;
+  }
+    @keyframes slide {
+        0% { transform: translateX(0); }
+        33.33% { transform: translateX(-100%); }
+        66.66% { transform: translateX(-200%); }
+        100% { transform: translateX(0); }
+    }
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .product-card {
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        width: 220px; /* Set a fixed width for product cards */
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+    }
+    .product-card img {
+            width: 100%;
+            height: auto;
+        }
+}

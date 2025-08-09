@@ -1,0 +1,22 @@
+<form id="contactForm" novalidate>
+  <label for="name">Full name</label>
+  <input id="name" name="name" required minlength="2">
+
+  <label for="product">Product</label>
+  <input id="product" name="product" required minlength="2">
+
+  <label for="email">Email</label>
+  <input id="email" name="email" type="email" required>
+
+  <label for="subject">Subject</label>
+  <input id="subject" name="subject" required minlength="2">
+
+  <label for="rating">Rating</label>
+  <input id="rating" name="rating" type="number" min="1" max="5" required>
+
+  <label for="message">Message</label>
+  <textarea id="message" name="message" rows="6" required></textarea>
+
+  <button type="submit">Send</button>
+  <div id="formMessage" role="status" aria-live="polite"></div>
+</form>

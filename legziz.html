@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Legziz Fashion Boutique</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="ledziz_larga.css">
+    <meta name="description" content="Explore the latest fashion trends and shop our exclusive collection.">
+    <meta name="keywords" content="fashion, boutique, clothing, accessories, online shopping">
+    <script src="JavaScript/cart.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+         <header class="header">
+
+    <div class="nav-container">
+      <div class="logo">
+        <img src="Image/legziz.png" alt="Legziz Fashion Logo">
+        <span class="logo-name">Legziz Fashion Boutique</span>
+      </div>
+
+      <nav class="nav-links">
+        <button id="menu" aria-label="Menu">&#9776;</button>
+          <a href="#">NEW IN</a>
+          <a href="#">DRESSES</a>
+          <a href="#">BEST SELLERS</a>
+          <a href="#">EVENING GOWNS</a>
+      </nav>
+
+      <div class="nav-right">
+        <div class="currency">
+          <label for="currency-select">Currency:</label>
+        <select id="currency-select" onchange="changeCurrency(this)">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="NGN">NGN</option>
+        </select>
+     </div>
+        <div class="nav-icons">
+            <a href id="login-link"><i class="fas fa-user"></i></a>
+            <a href id="search-link"><i class="fas fa-search"></i></a>
+            <input type="text" id="search-input" placeholder="Search..." style="display: none;">
+            <button id="search-button" style="display: none;">Search</button>
+            <a href id="cart-link"><i class="fas fa-shopping-bag"></i></a>
+       </div>
+  </header>
+    
+<main>
+  <section class="hero">
+    <div class="carousel">
+      <img src="Image/fashon12.jpg" alt="Fashion Look 1" class="carousel-image">
+      <img src="image/fashon11.jpg" alt="Fashion Look 2" class="carousel-image">
+      <img src="image/fashon4.jpg" alt="Fashion Look 3" class="carousel-image">
+      <img src="image/fashon17.jpg" alt="Fashion Look 4" class="carousel-image">
+      <img src="image/fashon1.jpg" alt="Fashion Look 5" class="carousel-image">
+      <img src="image/fashon11.jpg" alt="Fashion Look 6" class="carousel-image">
+      <img src="image/fashon15.jpg" alt="Fashion Look 7" class="carousel-image">
+    </div>
+    <div class="hero-text">
+        <h1>Welcome to Legziz Fashion Boutique</h1>
+        <p>At Legziz Fashion Boutique, we believe that fashion is more than just clothing—it’s an expression of who you are. Whether you’re searching for something bold and daring or subtle and timeless, we’ve curated a collection that speaks to every style, mood, and occasion. Our pieces are handpicked with care, ensuring that you not only look great but feel confident every time you step out. Discover a world of premium fashion that combines sophistication with modern trends. From stunning dresses and tailored suits to accessories that complete your look, each item in our boutique is designed to make a statement. We prioritize quality and comfort, so you don’t just look fashionable—you feel it, too. Join us at Legziz Fashion Boutique—where your next look is waiting to transform you into the best version of yourself.</p>
+    </div>
+    <div class="hero-image">
+      <img src="image/abuja.webp" alt="Beautiful view of Abuja city with Aso Rock" />
+    </div>
+  </section>
+
+<section class="categories">
+    <div class="category-link">
+        <a href="men.html"><img src="Image/fashion20.JPG" alt="Men's Wear"></a>
+        <h3>Men's Wear</h3>
+    </div>
+    <div class="category-link">
+        <a href="wemen.html"><img src="Image/fashon17.jpg" alt="Women's Wear"></a>
+        <h3>Women's Wear</h3>
+    </div>
+    <div class="category-link">
+        <a href="kids.html"><img src="Image/fashion22.jpg" alt="Kids' Fashion"></a>
+        <h3>Kids' Fashion</h3>
+    </div>
+    <div class="category-link">
+        <a href="accessories.html"><img src="Image/fashon7.jpg" alt="Accessories"></a>
+        <h3>Accessories</h3>
+    </div>
+</section>
+
+<section class="cta">
+    <h2>Ready to Redefine Your Style?</h2>
+    <p>Explore the latest trends and get your perfect look today.</p>
+    <a href="/shop-now" class="cta-button">Shop Now</a>
+</section>
+
+<section class="products">
+            <h2>Featured Products</h2>
+        <p>Check out our exclusive collection of clothing and accessories.</p>  
+        </section>
+        <section class="product-grid"> 
+            <div class="product-card">
+                <img src="Image/fashion12.jpg" alt="Product 1">
+                <h3>Boho Fringe Shoulder Bag</h3>
+                <p>$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="Image/fashon12.jpg" alt="Product 2">
+                <h3>Classic Black Leather Boots</h3>
+                <p>$39.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="Image/fashon17.jpg"Product 3">
+                <h3>Red Carpet Glamour Gown</h3>
+                <p>$49.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="Image/fashon18.jpg" alt="Product 4">
+                <h3>Urban Chic Denim Jacket</h3>
+                <p>$59.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="Image/fashon19.jpg" alt="Product 5">
+                <h3>Midnight Sparkle Cocktail Dress</h3>
+                <p>$69.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="Image/fashon11.jpg" alt="Product 6">
+                <h3>Emerald Green Silk Blouse</h3>
+                <p>$79.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="Image/fashon1.jpg" alt="Product 7">
+                <h3>Royal Red Suede Heels</h3>
+                <p>$89.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="Image/fashion2.jpg" alt="Product 8">
+                <h3>Floral Print A-Line Skirt</h3>
+                <p>$99.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="Image/fashon15.jpg" alt="Product 9">
+                <h3>Velvet Bloom Fragrance Mist</h3>
+                <p>$109.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="Image/fashon71.jpg" alt="Product 10">
+                <h3>Vintage Gold Chain Necklace</h3>
+                <p>$119.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <!-- More product cards here -->
+        </section>
+    </main>
+    
+    <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Customer Care</h3>
+      <ul>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">Delivery</a></li>
+        <li><a href="#">Size Guide</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Shop</h3>
+      <ul>
+        <li><a href="#">New In</a></li>
+        <li><a href="accessories.html">All Dresses</a></li>
+        <li><a href="men.html">Men's Wear</a></li>
+        <li><a href="wemen.html">Women's Wear</a></li>
+        <li><a href="kids.html">Kids' Fashion</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>About Us</h3>
+      <p>Legziz Fashion Boutique brings you a carefully curated collection of trendy, high-end styles to take you from day to night and everything in-between.</p>
+      <a href="#" class="follow-btn">💜 Follow on Shop</a>
+    </div>
+
+    <div class="footer-section">
+      <h3>Newsletter</h3>
+      <p>Sign up and don't miss out on our dreamy new product drops or exclusive offers.</p>
+      <form>
+        <input type="email" placeholder="E-mail" />
+        <button type="submit">SUBSCRIBE</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-pinterest"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-vimeo-v"></i></a>
+    </div>
+    <div class="footer-payment">
+      <img src="Image/paypal.png" alt="PayPal">
+      <img src="Image/apple1.png" alt="Apple Pay">
+      <img src="Image/google.png" alt="Google Pay">
+      <img src="Image/master.png" alt="MasterCard">
+      <img src="Image/card-cash.png" alt="Visa">
+    </div>
+    <div class="footer-copy">
+      <span>© 2025 - Legziz Fashion Boutique</span>
+    </div>
+  </div>
+</footer>
+
+    
+    <script src="script.js"></script>
+    <script>
+        // Example JavaScript for interactivity
+        document.querySelectorAll('.product-card button').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Product added to cart!');
+            });
+        });
+    </script>
+</body>
+</html>

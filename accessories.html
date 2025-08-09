@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legziz Fashion - Accessories</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Explore our exclusive collection of dresses at Legziz Fashion Boutique.">
+    <meta name="keywords" content="dresses, fashion, boutique, clothing, online shopping">
+    <script src="JavaScript/cart.js" defer></script>
+    <script src="JavaScript/script.js" defer></script>
+    <style>
+        .accessories-section {
+            text-align: center;
+            padding: 20px;
+        }
+        .accessory-item {
+            display: inline-block;
+            margin: 10px;
+            width: 200px;
+        }
+        .accessory-item img {
+            width: 100%;
+            height: auto;
+        }
+        .accessory-item h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .accessory-item p {
+            color: #555;
+        }
+        .accessory-item button {
+            padding: 10px 15px;
+            background-color: #f0c040;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .accessory-item button:hover {
+            background-color: #e0b030;
+        }
+</style>
+<header class="header">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="Image/legziz.png" alt="Legziz Fashion Logo">
+        <span class="logo-name">Legziz Fashion Boutique</span>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#">NEW IN</a>
+        <a href="#">DRESSES</a>
+        <a href="#">BEST SELLERS</a>
+        <a href="#">EVENING GOWNS</a>
+      </nav>
+
+    <div class="nav-right">
+        <div class="currency">
+          <label for="currency-select">Currency:</label>
+            <select id="currency-select" onchange="changeCurrency(this)">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="NGN">NGN</option>
+            </select>
+        </div>
+    </div>
+    <div class="nav-icons">
+        <a href id="login-link"><i class="fas fa-user"></i></a>
+        <a href id="search-link"><i class="fas fa-search"></i></a>
+        <input type="text" id="search-input" placeholder="Search..." style="display: none;">
+        <a href id="cart-link"><i class="fas fa-shopping-bag"></i></a>
+    </div>
+</header>
+
+<body>
+    <main>
+         <section class="hero">
+      <div class="carousel">
+        <img src="Image/fashion12.jpg" alt="Fashion Look 1" class="carousel-image">
+        <img src="image/fashion2.jpg" alt="Fashion Look 2" class="carousel-image">
+        <img src="image/fashon4.jpg" alt="Fashion Look 3" class="carousel-image">
+        <img src="image/fashon17.jpg" alt="Fashion Look 4" class="carousel-image">
+        <img src="image/fashon1.jpg" alt="Fashion Look 5" class="carousel-image">
+        <img src="image/fashon11.jpg" alt="Fashion Look 6" class="carousel-image">
+        <img src="image/fashon15.jpg" alt="Fashion Look 7" class="carousel-image">
+      </div>
+    <div class="hero-text">
+        <h1>Welcome to Legziz Fashion Boutique</h1>
+        <p>At Legziz Fashion Boutique, we believe that fashion is more than just clothing—it’s an expression of who you are. Whether you’re searching for something bold and daring or subtle and timeless, we’ve curated a collection that speaks to every style, mood, and occasion. Our pieces are handpicked with care, ensuring that you not only look great but feel confident every time you step out.
+
+Discover a world of premium fashion that combines sophistication with modern trends. From stunning dresses and tailored suits to accessories that complete your look, each item in our boutique is designed to make a statement. We prioritize quality and comfort, so you don’t just look fashionable—you feel it, too.
+
+Join us at Legziz Fashion Boutique—where your next look is waiting to transform you into the best version of yourself.
+
+</p>
+    </div>
+</section> 
+        <div class="main-content">
+        <section class="accessories-section">
+            <h2>Exclusive Accessories Collection</h2>
+            <p>Explore our range of stylish accessories to complement your outfits.</p>
+
+            <!-- Accessory Items -->
+            <div class="accessory-item">
+                <img src="Image/Accessories (8).jpg" alt="Accessory 1">
+                <h3>Elegant Necklace</h3>
+                <p>$50.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="accessory-item">
+                <img src="Image/fashon6.jpg" alt="Accessory 2">
+                <h3>Stylish Bracelet</h3>
+                <p>$30.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="accessory-item">
+                <img src="Image/Accessories (7).jpg" alt="Accessory 3">
+                <h3>Chic Earrings</h3>
+                <p>$25.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="accessory-item">
+                <img src="Image/fashon13.jpg" alt="Accessory 4">
+                <h3>Fashionable Handbag</h3>
+                <p>$120.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="accessory-item">
+                <img src="Image/fashon14.jpg" alt="Accessory 5">
+                <h3>Trendy Sunglasses</h3>
+                <p>$40.00</p>
+                <button>Add to Cart</button>
+            </div>
+
+
+            <div class="accessory-item">
+                <img src="Image/Accessories (4).jpg" alt="Accessory 2">
+                <h3>Stylish Bracelet</h3>
+                <p>$30.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="accessory-item">
+                <img src="Image/Accessories (15).jpg" alt="Accessory 3">
+                <h3>Chic Earrings</h3>
+                <p>$25.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="accessory-item">
+                <img src="Image/Accessories (2).jpg" alt="Accessory 4">
+                <h3>Fashionable Handbag</h3>
+                <p>$120.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="accessory-item">
+                <img src="Image/Accessories (12).jpg" alt="Accessory 5">
+                <h3>Trendy Sunglasses</h3>
+                <p>$40.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="accessory-item">
+                <img src="Image/Accessories (16).jpg" alt="Accessory 6">
+                <h3>Stylish Scarf</h3>
+                <p>$35.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="accessory-item">
+                <img src="Image/Accessories (6).jpg" alt="Accessory 7">
+                <h3>Elegant Watch</h3>
+                <p>$150.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="accessory-item">
+                <img src="Image/Accessories (13).jpg" alt="Accessory 8">
+                <h3>Leather Belt</h3>
+                <p>$45.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="accessory-item">
+                <img src="Image/Accessories (9).jpg" alt="Accessory 9">
+                <h3>Fashionable Hat</h3>
+                <p>$60.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="accessory-item">
+                <img src="Image/Accessories (11).jpg" alt="Accessory 10">
+                <h3>Stylish Gloves</h3>
+                <p>$20.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="accessory-item">
+                <img src="Image/Accessories (10).jpg" alt="Accessory 11">
+                <h3>Chic Brooch</h3>
+                <p>$15.00</p>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Customer Care</h3>
+      <ul>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">Delivery</a></li>
+        <li><a href="#">Size Guide</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Shop</h3>
+      <ul>
+        <li><a href="#">New In</a></li>
+        <li><a href="#">All Dresses</a></li>
+        <li><a href="#">Men's Wear</a></li>
+        <li><a href="#">Women's Wear</a></li>
+        <li><a href="#">Kids' Fashion</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>About Us</h3>
+      <p>Legziz Fashion Boutique brings you a carefully curated collection of trendy, high-end styles to take you from day to night and everything in-between.</p>
+      <a href="#" class="follow-btn">💜 Follow on Shop</a>
+    </div>
+
+    <div class="footer-section">
+      <h3>Newsletter</h3>
+      <p>Sign up and don't miss out on our dreamy new product drops or exclusive offers.</p>
+      <form>
+        <input type="email" placeholder="E-mail" />
+        <button type="submit">SUBSCRIBE</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-pinterest"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-vimeo-v"></i></a>
+    </div>
+    <div class="footer-payment">
+      <img src="Image/paypal.png" alt="PayPal">
+      <img src="Image/apple1.png" alt="Apple Pay">
+      <img src="Image/google.png" alt="Google Pay">
+      <img src="Image/master.png" alt="MasterCard">
+      <img src="Image/card-cash.png" alt="Visa">
+    </div>
+    <div class="footer-copy">
+      <span>© 2025 - Legziz Fashion Boutique</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
+    

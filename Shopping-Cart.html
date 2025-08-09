@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Shopping Bag</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="JavaScript/cart.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="description" content="Explore the latest fashion trends and shop our exclusive collection.">
+    <meta name="keywords" content="fashion, boutique, clothing, accessories, online shopping">
+    </head>
+<body>
+ <header class="header">
+
+    <div class="nav-container">
+      <div class="logo">
+        <img src="Image/legziz.png" alt="Legziz Fashion Logo">
+        <span class="logo-name">Legziz Fashion Boutique</span>
+      </div>
+
+   <nav class="nav-links">
+      <a href="legziz.html">HOME</a>
+      <a href="men.html">MEN's WEAR</a>
+      <a href="wemen.html">WEMEN's WEAR</a>
+     <a href="kids.html">KID'S FASHION</a>
+   </nav>
+
+      <div class="nav-right">
+        <div class="currency">
+         <label for="currency-select">Currency:</label>
+        <select id="currency-select" onchange="changeCurrency(this)">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="NGN">NGN</option>
+        </select>
+     </div>
+        <div class="nav-icons">
+            <a href="Login.html"><i class="fas fa-user"><img src="Image/account1.png" alt="Account"></i></a>
+            <a href="simg.html"><i class="fas fa-search"><img src="Image/search1.png" alt="Search"></i></a>
+            <a href="Shopping-Cart.html"><i class="fas fa-shopping-bag"><img src="Image/shopping.png" alt="Shopping Bag"></i></a>
+            <a href="chat.html"><i class="fas fa-chat"><img src="Image/chat.png" alt="chat"></i></a>
+        </div>
+      </div>
+   </header>
+    <main>
+
+   <main class="cart-container">
+     <h2>Your Shopping Cart</h2>
+     <div id="cart-items"></div>
+     <div class="cart-summary">
+     <p>Total: ₦<span id="total-price">0</span></p>
+      <button onclick="checkout()">Proceed to Checkout</button>
+
+    </div>
+  </main>
+    
+
+    
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Customer Care</h3>
+      <ul>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">Delivery</a></li>
+        <li><a href="#">Size Guide</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Shop</h3>
+      <ul>
+        <li><a href="#">New In</a></li>
+        <li><a href="#">All Dresses</a></li>
+        <li><a href="#">Men's Wear</a></li>
+        <li><a href="#">Women's Wea</a></li>
+        <li><a href="#">Kids' Fashion</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>About Us</h3>
+      <p>Legziz Fashion Boutique brings you a carefully curated collection of trendy, high-end styles to take you from day to night and everything in-between.</p>
+      <a href="#" class="follow-btn">💜 Follow on Shop</a>
+    </div>
+
+    <div class="footer-section">
+      <h3>Newsletter</h3>
+      <p>Sign up and don't miss out on our dreamy new product drops or exclusive offers.</p>
+      <form>
+        <input type="email" placeholder="E-mail" />
+        <button type="submit">SUBSCRIBE</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-pinterest"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-vimeo-v"></i></a>
+    </div>
+    <div class="footer-payment">
+      <img src="Image/paypal.png" alt="PayPal">
+      <img src="Image/apple1.png" alt="Apple Pay">
+      <img src="Image/google.png" alt="Google Pay">
+      <img src="Image/master.png" alt="MasterCard">
+      <img src="Image/card-cash.png" alt="Visa">
+    </div>
+    <div class="footer-copy">
+      <span>© 2025 - Legziz Fashion Boutique</span>
+    </div>
+  </div>
+</footer>
+<script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
+<script src="JavaScript/cart.js" crossorigin="anonymous"></script>
+<script>
+    // Example JavaScript for currency change
+    function changeCurrency(selectElement) {
+        const selectedCurrency = selectElement.value;
+        // Logic to update prices based on selected currency
+        console.log(`Currency changed to: ${selectedCurrency}`);
+    }
+
+    // Example JavaScript for checkout button
+    function checkout() {
+        alert('Proceeding to checkout...');
+        // Logic to handle checkout process
+    }
+    // Example JavaScript for cart functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const cartItems = document.getElementById('cart-items');
+        const totalPrice = document.getElementById('total-price');
+
+        // Example cart items
+        const items = [
+            { name: 'Dress 1', price: 5000, quantity: 2 },
+            { name: 'Dress 2', price: 7000, quantity: 1 }
+        ];
+
+        let total = 0;
+
+        items.forEach(item => {
+            const itemTotal = item.price * item.quantity;
+            total += itemTotal;
+
+            const itemDiv = document.createElement('div');
+            itemDiv.className = 'cart-item';
+            itemDiv.innerHTML = `
+                <span>${item.name} (₦${item.price}) x ${item.quantity}</span>
+                <span>₦${itemTotal}</span>
+            `;
+            cartItems.appendChild(itemDiv);
+        });
+
+        totalPrice.textContent = total.toFixed(2);
+    });
+</script>
+</script>
+
+</body>
+</html>

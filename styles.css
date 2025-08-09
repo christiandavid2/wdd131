@@ -1,0 +1,281 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.header {
+  background-color: #000;
+  color: white;
+  padding: 15px 30px;
+  border-bottom: 1px solid #222;
+}
+
+.logo img {
+  height: 35px;
+}
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+.logo-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+.nav-links {
+  display: none;
+  gap: 20px;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: #ff6347;
+}
+.nav-right {
+  display: none;
+}
+#menu {
+  display: block;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+.hero {
+    position: relative;
+    height: 500px; /* Adjust as needed */
+    overflow: hidden;
+    display: none;
+
+}
+.products {
+    padding: 20px;
+    background-color: #555252;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    width: 220px; /* Set a fixed width for product cards */
+}
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 50px 30px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 220px;
+  margin: 20px 0;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #aaa;
+  display: block;
+  margin-bottom: 8px;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #aaa;
+}
+
+.follow-btn {
+  display: inline-block;
+  background: #7a3dff;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+footer-section form {
+  margin-top: 10px;
+}
+
+.footer-section input[type="email"] {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 3px;
+}
+
+.footer-section button {
+  width: 100%;
+  padding: 10px;
+  background: #fff;
+  color: #333;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  border-top: 1px solid #222;
+  margin-top: 30px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.footer-icons a {
+  color: #aaa;
+  margin: 0 8px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.footer-icons a:hover {
+  color: #fff;
+}
+
+.footer-payment img {
+  height: 28px;
+  margin: 8px;
+}
+
+.footer-copy {
+  margin-top: 15px;
+  color: #555;
+  font-size: 13px;
+}
+
+
+/* Category Links Section */
+.categories {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+.category-link {
+    text-align: center;
+    flex-basis: 22%; /* Adjust to fit the number of categories */
+}
+
+.category-link img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.category-link:hover img {
+    transform: scale(1.05); /* Hover effect */
+}
+
+.category-link h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Call to Action Section */
+.cta {
+    text-align: center;
+    padding: 40px;
+    background-color: #ff9f00;
+    color: white;
+}
+
+.cta h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.cta p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.cart-container {
+  padding: 20px;
+}
+
+#cart-items {
+  margin-bottom: 20px;
+}
+
+.cart-summary {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  text-align: right;
+}
+
+.cart-summary button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.chat-container {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}

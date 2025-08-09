@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legziz Fashion - Dresses</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Explore our exclusive collection of dresses at Legziz Fashion Boutique.">
+    <meta name="keywords" content="dresses, fashion, boutique, clothing, online shopping">
+    <style>
+    
+    .filter-buttons {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .filter-buttons button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .product-card {
+      border: 1px solid #ddd;
+      background-color: #555;
+      border-radius: 8px;
+      padding: 10px;
+      width: 200px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .product-name {
+      font-weight: bold;
+      margin: 10px 0 5px;
+    }
+    .product-category {
+      color: #555;
+      font-size: 14px;
+    }
+  </style>
+  </head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="Image/legziz.png" alt="Legziz Fashion Logo">
+                <span class="logo-name">Legziz Fashion Boutique</span>
+            </div>
+            <nav class="nav-links">
+                <a href="legziz.html">Home</a>
+                <a href="#">DRESSES</a>
+                <a href="#">BEST SELLERS</a>
+                <a href="#">EVENING GOWNS</a>
+            </nav>
+            <div class="nav-right">
+                <div class="currency">
+                    <label for="currency-select">Currency:</label>
+                    <select id="currency-select" onchange="changeCurrency(this)">
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="NGN">NGN</option>
+                    </select>
+                </div>
+                <div class="nav-icons">
+                    <a href="Login.html"><i class="fas fa-user"><img src="Image/account1.png" alt="Account"></i></a>
+                    <a href="simg.html"><i class="fas fa-search"><img src="Image/search1.png" alt="Search"></i></a>
+                    <a href="Shopping-Cart.html"><i class="fas fa-shopping-bag"><img src="Image/shopping.png" alt="Shopping Bag"></i></a>
+                    <a href="chat.html"><i class="fas fa-chat"><img src="Image/chat.png" alt="Chat"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <body>
+
+  <h1>Fashion Store</h1>
+
+  <div class="filter-buttons">
+    <button onclick="filterCategory('all')">All</button>
+    <button onclick="filterCategory('men')">Men's Wear</button>
+    <button onclick="filterCategory('women')">Women's Wear</button>
+    <button onclick="filterCategory('kids')">Kids' Wear</button>
+  </div>
+
+  <div class="product-list" id="product-list">
+    <!-- Products will be rendered here -->
+  </div>
+
+  <script>
+    // Sample product data
+    const products = [
+      { id: 1, name: "Men's T-Shirt", category: "men", image: "https://via.placeholder.com/200x200?text=Men+T-Shirt" },
+      { id: 2, name: "Women's Dress", category: "women", image: "http://127.0.0.1:5500/womens-wear" },
+      { id: 3, name: "Men's Jacket", category: "men", image: "https://via.placeholder.com/200x200?text=Men+Jacket" },
+      { id: 4, name: "Women's Blouse", category: "women", image: "https://via.placeholder.com/200x200?text=Women+Blouse" },
+      { id: 5, name: "Men's Shoes", category: "men", image: "https://via.placeholder.com/200x200?text=Men+Shoes" },
+      { id: 6, name: "Women's Heels", category: "women", image: "https://via.placeholder.com/200x200?text=Women+Heels" },
+      { id: 7, name: "Kids' T-Shirt", category: "kids", image: "https://via.placeholder.com/200x200?text=Kids+T-Shirt" },
+      { id: 8, name: "Kids' Dress", category: "kids", image: "https://via.placeholder.com/200x200?text=Kids+Dress" },
+      { id: 9, name: "Kids' Shoes", category: "kids", image: "https://via.placeholder.com/200x200?text=Kids+Shoes" },
+        { id: 10, name: "Kids' Jacket", category: "kids", image: "https://via.placeholder.com/200x200?text=Kids+Jacket" },
+        { id: 11, name: "Kids' Pants", category: "kids", image: "https://via.placeholder.com/200x200?text=Kids+Pants" },
+        { id: 12, name: "Kids' Skirt", category: "kids", image: "https://via.placeholder.com/200x200?text=Kids+Skirt" },
+        { id: 13, name: "Kids' Hoodie", category: "kids", image: "https://via.placeholder.com/200x200?text=Kids+Hoodie" },
+        { id: 14, name: "Kids' Shorts", category: "kids", image: "https://via.placeholder.com/200x200?text=Kids+Shorts" },
+        { id: 15, name: "Kids' Socks", category: "kids", image: "https://via.placeholder.com/200x200?text=Kids+Socks" }
+    ];
+
+    const productList = document.getElementById("product-list");
+
+    function renderProducts(items) {
+      productList.innerHTML = ""; // clear previous products
+      if (items.length === 0) {
+        productList.innerHTML = "<p>No products found.</p>";
+        return;
+      }
+      items.forEach(product => {
+        const productCard = document.createElement("div");
+        productCard.className = "product-card";
+        productCard.innerHTML = `
+          <img src="${product.image}" alt="${product.name}" />
+          <div class="product-name">${product.name}</div>
+          <div class="product-category">${product.category === "men" ? "Men's Wear" : "Women's Wear"}</div>
+        `;
+        productList.appendChild(productCard);
+      });
+    }
+
+    function filterCategory(category) {
+      if (category === "all") {
+        renderProducts(products);
+      } else {
+        const filtered = products.filter(p => p.category === category);
+        renderProducts(filtered);
+      }
+    }
+
+    // Initial render all products
+    filterCategory("all");
+  </script>
+
+</body>
+</html>
+    
+
+    <!-- Footer -->
+</html>

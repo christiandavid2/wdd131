@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wemen-Dresses</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Explore our exclusive collection of dresses at Legziz Fashion Boutique.">
+    <meta name="keywords" content="dresses, fashion, boutique, clothing, online shopping">
+    <style>
+        .filter-buttons {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .filter-buttons button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #555;
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .product-card {
+            border: 1px solid #ddd;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 10px;
+            width: 200px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .product-name {
+            font-weight: bold;
+            margin: 10px 0 5px;
+        }
+        .product-category {
+            color: #555;
+            font-size: 14px;
+        }
+        .filter-buttons {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .filter-buttons button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .product-card {
+            border: 1px solid #ddd;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 10px;
+            width: 200px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .product-name {
+            font-weight: bold;
+            margin: 10px 0 5px;
+        }
+        .product-category {
+            color: #555;
+            font-size: 14px;
+        }
+        .dresses-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head> 
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="Image/legziz.png" alt="Legziz Fashion Logo">
+                <span class="logo-name">Legziz Fashion Boutique</span>
+            </div>
+            
+            <nav class="nav-links">
+                <a href="legziz.html">HOME</a>
+                <a href="men.html">MEN's WEAR</a>
+                <a href="wemen.html">WEMEN's WEAR</a>
+                <a href="kids.html">KID'S FASHION</a>
+            <div class="nav-right">
+                <div class="currency">
+                    <label for="currency-select">Currency:</label>
+                    <select id="currency-select" onchange="changeCurrency(this)">
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="NGN">NGN</option>
+                    </select>
+                </div>
+                <div class="nav-icons">
+                    <a href="Login.html"><i class="fas fa-user"><img src="Image/account1.png" alt="Account"></i></a>
+                    <a href="simg.html"><i class="fas fa-search"><img src="Image/search1.png" alt="Search"></i></a>
+                    <a href="Shopping-Cart.html"><i class="fas fa-shopping-bag"><img src="Image/shopping.png" alt="Shopping Bag"></i></a>
+                    <a href="chat.html"><i class="fas fa-chat"><img src="Image/chat.png" alt="Chat"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+         <section class="hero">
+      <div class="carousel">
+        <img src="Image/fashion12.jpg" alt="Fashion Look 1" class="carousel-image">
+        <img src="image/fashion2.jpg" alt="Fashion Look 2" class="carousel-image">
+        <img src="image/fashon4.jpg" alt="Fashion Look 3" class="carousel-image">
+        <img src="image/fashon17.jpg" alt="Fashion Look 4" class="carousel-image">
+        <img src="image/fashon1.jpg" alt="Fashion Look 5" class="carousel-image">
+        <img src="image/fashon11.jpg" alt="Fashion Look 6" class="carousel-image">
+        <img src="image/fashon15.jpg" alt="Fashion Look 7" class="carousel-image">
+      </div>
+    <div class="hero-text">
+        <h1>Welcome to Legziz Fashion Boutique</h1>
+        <p>At Legziz Fashion Boutique, we believe that fashion is more than just clothing—it’s an expression of who you are. Whether you’re searching for something bold and daring or subtle and timeless, we’ve curated a collection that speaks to every style, mood, and occasion. Our pieces are handpicked with care, ensuring that you not only look great but feel confident every time you step out.
+
+Discover a world of premium fashion that combines sophistication with modern trends. From stunning dresses and tailored suits to accessories that complete your look, each item in our boutique is designed to make a statement. We prioritize quality and comfort, so you don’t just look fashionable—you feel it, too.
+
+Join us at Legziz Fashion Boutique—where your next look is waiting to transform you into the best version of yourself.
+
+</p>
+    </div>
+</section>
+    <div class="main-content">
+        <!-- Dresses Section -->
+        <section class="dresses-section">
+            <h2>Exclusive Dresses Collection</h2>
+
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button onclick="filterCategory('all')">All</button>
+                <button onclick="filterCategory('casual')">Casual</button>
+                <button onclick="filterCategory('formal')">Formal</button>
+                <button onclick="filterCategory('evening')">Evening</button>
+            </div>
+            <!-- Product List -->
+            <div class="product-list" id="product-list">
+                <div class="product-card" data-category="formal">
+                    <img src="Image/wemen1.jpg" alt="Dress 1">
+                    <h3 class="product-name">Elegant Evening Dress</h3>
+                    <p class="product-category">Evening</p>
+                    <p>$120.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="casual">
+                    <img src="Image/wemen2.jpg" alt="Dress 2">
+                    <h3 class="product-name">Summer Floral Dress</h3>
+                    <p class="product-category">Casual</p>
+                    <p>$85.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="formal">
+                    <img src="Image/wemen3.jpg" alt="Dress 3">
+                    <h3 class="product-name">Chic Cocktail Dress</h3>
+                    <p class="product-category">Formal</p>
+                    <p>$95.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="evening">
+                    <img src="Image/wemen4.jpg" alt="Dress 4">
+                    <h3 class="product-name">Glamorous Evening Gown</h3>
+                    <p class="product-category">Evening</p>
+                    <p>$150.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="casual">
+                    <img src="Image/wemen5.jpg" alt="Dress 5">
+                    <h3 class="product-name">Bohemian Maxi Dress</h3>
+                    <p class="product-category">Casual</p>
+                    <p>$110.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="casual">
+                    <img src="Image/wemen8.jpg" alt="Dress 1">
+                    <h3 class="product-name">Elegant Evening Dress</h3>
+                    <p class="product-category">Evening</p>
+                    <p>$120.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="casual">
+                    <img src="Image/wemen6.jpg" alt="Dress 2">
+                    <h3 class="product-name">Summer Floral Dress</h3>
+                    <p class="product-category">Casual</p>
+                    <p>$85.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="formal">
+                    <img src="Image/wemen7.jpg" alt="Dress 3">
+                    <h3 class="product-name">Chic Cocktail Dress</h3>
+                    <p class="product-category">Formal</p>
+                    <p>$95.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="evening">
+                    <img src="Image/dress4.jpg" alt="Dress 4">
+                    <h3 class="product-name">Glamorous Evening Gown</h3>
+                    <p class="product-category">Evening</p>
+                    <p>$150.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="casual">
+                    <img src="Image/dress5.jpg" alt="Dress 5">
+                    <h3 class="product-name">Bohemian Maxi Dress</h3>
+                    <p class="product-category">Casual</p>
+                    <p>$110.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="formal">
+                    <img src="Image/dress6.jpg" alt="Dress 6">
+                    <h3 class="product-name">Vintage Lace Dress</h3>
+                    <p class="product-category">Formal</p>
+                    <p>$130.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="casual">
+                    <img src="Image/dress7.jpg" alt="Dress 7">
+                    <h3 class="product-name">Casual Day Dress</h3>
+                    <p class="product-category">Casual</p>
+                    <p>$70.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="evening">
+                    <img src="Image/dress8.jpg" alt="Dress 8">
+                    <h3 class="product-name">Elegant Evening Gown</h3>
+                    <p class="product-category">Evening</p>
+                    <p>$140.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="formal">
+                    <img src="Image/dress6.jpg" alt="Dress 6">
+                    <h3 class="product-name">Vintage Lace Dress</h3>
+                    <p class="product-category">Formal</p>
+                    <p>$130.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="casual">
+                    <img src="Image/dress7.jpg" alt="Dress 7">
+                    <h3 class="product-name">Casual Day Dress</h3>
+                    <p class="product-category">Casual</p>
+                    <p>$70.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card" data-category="evening">
+                    <img src="Image/wemen2.jpg" alt="Dress 8">
+                    <h3 class="product-name">Elegant Evening Gown</h3>
+                    <p class="product-category">Evening</p>
+                    <p>$140.00</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Customer Care</h3>
+                <ul>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="#">New In</a></li>
+                    <li><a href="#">All Dresses</a></li>
+                     <li><a href="#">Men's Wear</a></li>
+        <li><a href="#">Women's Wea</a></li>
+        <li><a href="#">Kids' Fashion</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>About Us</h3>
+      <p>Legziz Fashion Boutique brings you a carefully curated collection of trendy, high-end styles to take you from day to night and everything in-between.</p>
+      <a href="#" class="follow-btn">💜 Follow on Shop</a>
+    </div>
+
+    <div class="footer-section">
+      <h3>Newsletter</h3>
+      <p>Sign up and don't miss out on our dreamy new product drops or exclusive offers.</p>
+      <form>
+        <input type="email" placeholder="E-mail" />
+        <button type="submit">SUBSCRIBE</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-pinterest"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-vimeo-v"></i></a>
+    </div>
+    <div class="footer-payment">
+      <img src="Image/paypal.png" alt="PayPal">
+      <img src="Image/apple1.png" alt="Apple Pay">
+      <img src="Image/google.png" alt="Google Pay">
+      <img src="Image/master.png" alt="MasterCard">
+      <img src="Image/card-cash.png" alt="Visa">
+    </div>
+    <div class="footer-copy">
+      <span>© 2025 - Legziz Fashion Boutique</span>
+    </div>
+  </div>
+</footer>
+<script>
+    function filterCategory(category) {
+        // Get all product cards
+        const productCards = document.querySelectorAll('.product-card');
+        productCards.forEach(card => {     
+            if (category === 'all' || card.getAttribute('data-category') === category) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+    </script>
+</body>
+
+
+
+            <!-- Dress Items -->    
+</html>
